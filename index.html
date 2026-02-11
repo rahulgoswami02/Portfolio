@@ -1,117 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rahul Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>RAHUL KUMAR | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <img src="https://github.com/rahulgoswami02/Portfolio/blob/main/IMG_20231101_195947-01%20(1).jpeg" alt="Rahul Kumar">
-        <h1>Rahul Kumar</h1>
-        <p>Computer Science Engineering Student</p>
-        <div class="links">
-            <a href="https://github.com/rahulgoswami02" target="_blank">GitHub</a>
-            <a href="https://www.hackerrank.com/mailtorahulgiri1" target="_blank">HackerRank</a>
-            <a href="https://www.linkedin.com/in/rahul-goswami-18124329a/">LinkedIn</a>
-            <a href="mailto:mailtorahulgiri01@gmail.com">Email</a>
-        </div>
-    </div>
+<nav>
+  <h2>Rahul Kumar</h2>
+  <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#cert">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Rahul Kumar</span></h1>
+    <p>Web Developer | B.Tech CSE Student</p>
+    <a href="https://drive.google.com/file/d/1kYwOQNh0Fxp1h_TPXxvtlVcSL80heGsA/view?usp=drive_link" class="btn">Download Resume</a>
+  </div>
+  <img src="https://raw.githubusercontent.com/rahulgoswami02/Portfolio/main/IMG_20231101_195947-01%20(1).jpeg" class="profile-pic">
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science Engineering student at Lovely Professional University with
-        hands-on experience in web development, backend systems, and problem-solving.
-        I enjoy building real-world projects and learning new technologies.
-    </p>
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science Engineering student with strong skills in web development, programming, and problem-solving. I have experience building full-stack applications using modern technologies and enjoy creating practical, user-friendly solutions.
+      </p>
+      <p>
+        I have worked on projects involving PHP, MySQL, JavaScript, and responsive interfaces. I am passionate about learning new technologies, improving my coding skills, and solving real-world problems through software development.
+      </p>
+
+      <div class="about-highlights">
+        <div>
+          <h3>3+</h3>
+          <p>Projects Built</p>
+        </div>
+        <div>
+          <h3>20+</h3>
+          <p>Certifications</p>
+        </div>
+      </div>
+
+      <a href="https://drive.google.com/file/d/1kYwOQNh0Fxp1h_TPXxvtlVcSL80heGsA/view?usp=drive_link" class="btn">Download Resume</a>
+    </div>
+  </div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul class="skills">
-        <li>C++</li><li>C</li><li>Java</li><li>Python</li><li>JavaScript</li><li>PHP</li>
-        <li>HTML</li><li>CSS</li><li>Bootstrap</li><li>NodeJS</li><li>React</li>
-        <li>MySQL</li><li>MongoDB</li>
-    </ul>
-</section>
+<section class="skills-section" id="skills">
+  <h2>Skills & Technologies</h2>
 
-<section>
-    <h2>Projects</h2>
+  <div class="skills-table">
 
-    <div class="project">
-        <h3>Electricity & Bill Payment Website</h3>
-        <p>
-            Responsive electricity bill payment system with authentication, live bill status,
-            dashboard and receipt generation.
-        </p>
-        <a href="https://github.com/rahulgoswami02/INDIAN-ELECTRICITY-WEBSITE" target="_blank">
-            View on GitHub
-        </a>
+    <div class="skill-row">
+      <h3>Programming Languages</h3>
+      <div class="skill-items">
+        <div class="skill-card"><p>C++</p></div>
+        <div class="skill-card"><p>JavaScript</p></div>
+        <div class="skill-card"><p>C</p></div>
+        <div class="skill-card"><p>PHP</p></div>
+        <div class="skill-card"><p>Python</p></div>
+        <div class="skill-card"><p>Java</p></div>
+      </div>
     </div>
 
-    <div class="project">
+    <div class="skill-row">
+      <h3>Frameworks & Frontend</h3>
+      <div class="skill-items">
+        <div class="skill-card"><p>HTML</p></div>
+        <div class="skill-card"><p>CSS</p></div>
+        <div class="skill-card"><p>Bootstrap</p></div>
+        <div class="skill-card"><p>React</p></div>
+        <div class="skill-card"><p>Node.js</p></div>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <h3>Tools & Platforms</h3>
+      <div class="skill-items">
+        <div class="skill-card"><p>MySQL</p></div>
+        <div class="skill-card"><p>MongoDB</p></div>
+        <div class="skill-card"><p>AutoCAD</p></div>
+        <div class="skill-card"><p>Git</p></div>
+        <div class="skill-card"><p>Canva</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="https://raw.githubusercontent.com/rahulgoswami02/Portfolio/main/istockphoto-484579702-612x612.jpg" alt="Electricity Bill Payment Website">
+      </div>
+      <div class="project-text">
+        <h3>Electricity Bill Payment Website</h3>
+        <p>
+          Built a responsive electricity and bill payment platform using HTML, CSS, JavaScript, and Bootstrap.
+          Integrated a PHP and MySQL backend for authentication and transaction management.
+          Added live bill status, payment dashboard, and receipt generation for users.
+        </p>
+        <p class="tech">
+          Tech: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL
+        </p>
+        <a href="https://github.com/rahulgoswami02" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="https://raw.githubusercontent.com/rahulgoswami02/Portfolio/main/download.jpg
+" alt="Electricity Bill Payment Website">
+      </div>
+      <div class="project-text">
         <h3>Sustainable Fertilizer Usage Optimizer</h3>
         <p>
-            Web tool that recommends optimal fertilizer usage based on soil, crop, and weather data.
+          Developed a web tool to recommend optimal fertilizer usage based on soil, crop, and weather data.
+          Implemented PHP and MySQL backend to store user inputs and generate customized fertilizer plans.
         </p>
-        <a href="https://github.com/rahulgoswami02/Sustainable-Fertilizer-Usage-Optimizer" target="_blank">
-            View on GitHub
+        <p class="tech">
+          Tech: HTML, CSS, JavaScript, Bootstrap, PHP, MySQL
+        </p>
+        <a href="https://github.com/rahulgoswami02" target="_blank" class="project-link">
+          View on GitHub →
         </a>
+      </div>
     </div>
 
-    <div class="project">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="https://raw.githubusercontent.com/rahulgoswami02/Portfolio/main/1_BsMY2TlHNLdJnvMU0OemIA.jpg
+" alt="Electricity Bill Payment Website">
+      </div>
+      <div class="project-text">
         <h3>Health Recommendation Chatbot</h3>
         <p>
-            AI-based chatbot providing personalized health and lifestyle suggestions using NLP.
+          Developed an AI-based chatbot to provide personalized health and lifestyle suggestions.
+          Integrated NLP with PHP/MySQL backend for query analysis and data management.
         </p>
-        <a href="https://github.com/rahulgoswami02/chatbot" target="_blank">
-            View on GitHub
+        <p class="tech">
+          Tech: HTML, CSS, JavaScript, PHP, MySQL, NLP
+        </p>
+        <a href="https://github.com/rahulgoswami02" target="_blank" class="project-link">
+          View on GitHub →
         </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="cert" class="cert-section">
+  <h2>Certifications</h2>
+  <div class="cert-list">
+
+  
+     <div class="cert-card">
+      <h3>Responsive Web Design</h3>
+      <p>FreeCodeCamp</p>
+      <span>October 2023</span>
+      <a href="https://drive.google.com/file/d/1doVqlyR_Pn19KpcaXTZavZG8PrRmAjVt/view?usp=sharing" class="btn">Certificate</a>
+    </div>
+    <div class="cert-card">
+      <h3>DSA in Python Programming</h3>
+      <p>CSE Pathsala</p>
+      <span>October 2025</span>
+      <a href="https://drive.google.com/file/d/1l1xIzueQEqSHyLowNspdtspG9ta4QJp8/view?usp=sharing" class="btn">Certificate</a>
+    </div>
+    <div class="cert-card">
+      <h3>All other Certifications</h3>
+      <p>Great learning</p>
+      <span>January 2025</span>
+      <a href="https://drive.google.com/drive/folders/19emJ1w_0wEXCtqahHci-M77CWBLP6-ny?usp=sharing" class="btn">Certificate</a>
     </div>
 </section>
 
-<section>
-    <h2>Training & Certificates</h2>
-    <ul>
-        <li>
-            Summer Training – DSA in Python  
-            <a href="https://drive.google.com/file/d/1l1xIzueQEqSHyLowNspdtspG9ta4QJp8/view" target="_blank">View</a>
-        </li>
-        <li>
-            DSA in Python (CSE Pathsala)  
-            <a href="https://drive.google.com/file/d/1doVqlyR_Pn19KpcaXTZavZG8PrRmAjVt/view" target="_blank">View</a>
-        </li>
-        <li>
-            All Certificates Folder  
-            <a href="https://drive.google.com/drive/folders/19emJ1w_0wEXCtqahHci-M77CWBLP6-ny" target="_blank">Open</a>
-        </li>
-    </ul>
+<section id="education" class="achieve-section">
+  <h2>Education</h2>
+
+  <div class="achieve-card">
+    <h3>B.Tech CSE</h3>
+    <p>Lovely Professional University, Punjab</p>
+    <p><strong>CGPA:</strong> 6.79</p>
+  </div>
+
+  <div class="achieve-card">
+    <h3>Intermediate</h3>
+    <p>DAV PG College, Siwan, Bihar</p>
+    <p><strong>Percentage:</strong> 70%</p>
+  </div>
+
+  <div class="achieve-card">
+    <h3>Matriculation</h3>
+    <p>Braj-Kishor High School, Siwan, Bihar</p>
+    <p><strong>Percentage:</strong> 70%</p>
+  </div>
+
 </section>
 
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Global Rank 1783 – LeetCode Biweekly Contest (Among 261k+ participants)</li>
-        <li>Gold Badge in Python – HackerRank</li>
-    </ul>
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <h3>Email ✉️</h3>
+      <p><a href="mailto:mailtorahulgiri01@gmail.com">mailtorahulgiri01@gmail.com</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Phone 📞</h3>
+      <p><a href="tel:+917563869673">+91 7563869673</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>GitHub 🐙</h3>
+      <p><a href="https://github.com/rahulgoswami02" target="_blank">github.com/rahulgoswami02</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h3>LinkedIn 🔗</h3>
+      <p><a href="https://linkedin.com/rahulgoswami02" target="_blank">linkedin.com/rahulgoswami02</a></p>
+    </div>
+
+  </div>
 </section>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><b>B.Tech CSE</b> – Lovely Professional University (CGPA: 6.79)</li>
-        <li><b>Intermediate</b> – DAV PG College, Siwan (78%)</li>
-        <li><b>Matriculation</b> – Braj Kishor High School, Siwan (77%)</li>
-    </ul>
-</section>
-
-<footer>
-    <p>© 2026 Rahul Kumar | Portfolio</p>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Rahul Kumar</p>
+    <p>Designed & Developed with ❤️ by Rahul Kumar</p>
+  </div>
 </footer>
 
 </body>
