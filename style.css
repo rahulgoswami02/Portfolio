@@ -193,11 +193,6 @@ section h2::after { content: ""; width: 64px; height: 4px; background: var(--pri
 .project-image img:hover {
   transform: scale(1.04);
 }
-.project-text h3 {
-  font-size: 1.4rem;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
 .project-text p {
   color: var(--muted);
   line-height: 1.6;
@@ -208,13 +203,16 @@ section h2::after { content: ""; width: 64px; height: 4px; background: var(--pri
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 8px;
-  display: inline-block;
+  display: block;
 }
 .project-link {
+  display: block;
+  width: fit-content;
   color: var(--secondary);
   font-weight: 600;
   text-decoration: none;
-  margin-top: 8px;
+  margin-top: 12px;
+  white-space: nowrap;
 }
 .project-link:hover {
   text-decoration: underline;
